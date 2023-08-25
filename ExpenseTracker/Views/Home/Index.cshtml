@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Expense Tracker</h1>
+        <p class="lead">Track your expenses easily.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Categories</h5>
+                    <p class="card-text">Manage your expense categories.</p>
+                    <a asp-controller="Categories" class="btn btn-primary">Go to Categories</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Expenses</h5>
+                    <p class="card-text">Track your expenses by category.</p>
+                    <a asp-controller="Expenses" class="btn btn-primary">Go to Expenses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
